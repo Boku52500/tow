@@ -67,8 +67,6 @@ export default function CatchAllPage() {
               "0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)",
             transition: "background-color 150ms ease",
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = "#e0a800")}
-          onMouseLeave={(e) => (e.currentTarget.style.background = "#f5b800")}
         >
           <ExternalLink style={{ width: 20, height: 20 }} />
           Gamodzaxeba
