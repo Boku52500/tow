@@ -6,21 +6,71 @@ export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f8f9fa] flex items-center justify-center px-4">
-      <div className="w-full max-w-sm text-center">
-        <div className="mx-auto w-20 h-20 rounded-2xl bg-[#1a1a2e] flex items-center justify-center shadow-lg">
-          <Truck className="w-10 h-10 text-[#f5b800]" />
+    <main
+      style={{
+        minHeight: "100vh",
+        background: "#f8f9fa",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "1rem",
+      }}
+    >
+      <div style={{ width: "100%", maxWidth: "24rem", textAlign: "center" }}>
+        <div
+          style={{
+            width: 80,
+            height: 80,
+            marginLeft: "auto",
+            marginRight: "auto",
+            borderRadius: 16,
+            background: "#1a1a2e",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            boxShadow:
+              "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
+          }}
+        >
+          <Truck style={{ width: 40, height: 40, color: "#f5b800" }} />
         </div>
 
-        <h1 className="mt-6 text-2xl font-extrabold text-[#1a1a2e]">
+        <h1
+          style={{
+            marginTop: 24,
+            fontWeight: 800,
+            fontSize: 24,
+            lineHeight: "32px",
+            color: "#1a1a2e",
+          }}
+        >
           Evakuatori
         </h1>
 
         <a
           href={MAIN_SITE_URL}
-          className="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#f5b800] px-6 py-4 text-lg font-bold text-[#1a1a2e] shadow-md hover:bg-[#e0a800] transition-colors"
+          style={{
+            marginTop: 32,
+            display: "inline-flex",
+            width: "100%",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 12,
+            borderRadius: 9999,
+            background: "#f5b800",
+            padding: "16px 24px",
+            fontSize: 18,
+            fontWeight: 700,
+            color: "#1a1a2e",
+            textDecoration: "none",
+            boxShadow:
+              "0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)",
+            transition: "background-color 150ms ease",
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.background = "#e0a800")}
+          onMouseLeave={(e) => (e.currentTarget.style.background = "#f5b800")}
         >
-          <ExternalLink className="w-5 h-5" />
+          <ExternalLink style={{ width: 20, height: 20 }} />
           Gamodzaxeba
         </a>
       </div>
