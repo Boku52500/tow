@@ -11,7 +11,7 @@ export default function Home() {
         </div>
 
         <h1 className="mt-6 text-2xl font-extrabold text-[#1a1a2e]">
-          ევაკუატორი
+          Evakuatori
         </h1>
 
         <a
