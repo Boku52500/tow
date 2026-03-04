@@ -1,9 +1,8 @@
 "use client";
 
-import { Phone, Truck } from "lucide-react";
+import { ExternalLink, Truck } from "lucide-react";
 
-const PHONE = "577 07 38 89";
-const PHONE_LINK = "tel:+995577073889";
+const MAIN_SITE_URL = "https://evakuatoritbilisshi.ge";
 
 export default function OnlinePage() {
   return (
@@ -18,14 +17,14 @@ export default function OnlinePage() {
         </h1>
 
         <a
-          href={PHONE_LINK}
+          href={MAIN_SITE_URL}
           className="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#f5b800] px-6 py-4 text-lg font-bold text-[#1a1a2e] shadow-md hover:bg-[#e0a800] transition-colors"
         >
-          <Phone className="w-5 h-5" />
+          <ExternalLink className="w-5 h-5" />
           Gamodzaxeba
         </a>
 
-        <p className="mt-4 text-sm text-[#6b7280]">{PHONE}</p>
+        <p className="mt-4 text-sm text-[#6b7280]">გადადით მთავარ ვებგვერდზე</p>
       </div>
     </main>
   );
