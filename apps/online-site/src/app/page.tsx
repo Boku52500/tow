@@ -2,6 +2,8 @@ import { ExternalLink, Truck } from "lucide-react";
 
 const MAIN_SITE_URL = "https://evakuatoritbilisshi.ge";
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f8f9fa] flex items-center justify-center px-4">
