@@ -63,6 +63,7 @@ export default function Home() {
             fontWeight: 700,
             color: "#1a1a2e",
             textDecoration: "none",
+            textDecorationLine: "none",
             boxShadow:
               "0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)",
             transition: "background-color 150ms ease",
@@ -71,7 +72,9 @@ export default function Home() {
           onMouseLeave={(e) => (e.currentTarget.style.background = "#f5b800")}
         >
           <ExternalLink style={{ width: 20, height: 20 }} />
-          Gamodzaxeba
+          <span style={{ textDecoration: "none", textDecorationLine: "none", borderBottom: "0 none" }}>
+            Gamodzaxeba
+          </span>
         </a>
       </div>
     </main>
